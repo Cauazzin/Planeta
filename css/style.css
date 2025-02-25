@@ -25,6 +25,9 @@ body {
             text-decoration: none;
         }
     }
+    .menu{
+        display: none;
+    }
 }
 
 .main {
@@ -79,4 +82,34 @@ body {
             }
         }
     }
+}
+
+@media screen and (max-width:1130px) {
+ .main{
+    flex-direction: column;
+    
+    & .lado-esquerdo{
+        width: 100%;
+    }
+
+    & img{
+        width: 500px;
+        margin: auto;
+    }
+ }   
+}
+
+@media screen and (max-width: 860px) {
+    .cabecalho{
+
+        & .nav{
+            display: none;
+        }
+
+        & .menu{
+            display: flex;
+            cursor: pointer;
+        }
+    }
+    
 }
